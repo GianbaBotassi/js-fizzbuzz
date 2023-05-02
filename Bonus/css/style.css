@@ -1,11 +1,38 @@
-/* #container{
+/* General style */
+body{
+    background-color: #083b4c;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+/* Container style */
+#container{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
+    gap: 20px;
 }
-#container .square{
+/* Square class items */
+span{
     display: flex;
     justify-content: center;
     align-items: center;
-    wid
-} */
+    background-color: #1389b2;
+    height: 100px;
+    width: 100px;
+}
+/* Fizz class style */
+.fizz{
+    background-color: #0cd6a1;
+}
+
+/* Buzz class style */
+.buzz{
+    background-color: #ffd166;
+}
+
+/* Fizz and Buzz class style */
+.fizzbuzz{
+    background-color: #f0466f;
+}
