@@ -1,4 +1,4 @@
-// Create const for numbers
+// Create container const, get container id from html
 const container = document.getElementById("container");
 
 // cycle numbers from 1 to 100
@@ -6,6 +6,9 @@ for(let i = 1; i<=100;i++){
 
   // assigne to element var new html element
   element = document.createElement("span");
+  
+  // Add element var to html container
+  container.append(element);
 
   // apply condition if number can be divisible:
   if(i % 3 === 0 && i % 5 === 0){  // divisible by 3 and 5
@@ -36,10 +39,6 @@ for(let i = 1; i<=100;i++){
   else{item = i
   }
 
-  // Add element var (has alrdy assigned span element)
-  container.append(element);
-
   // Add item var to new html element (span)
   element.append(item);
-
 }
